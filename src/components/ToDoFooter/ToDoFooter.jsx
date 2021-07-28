@@ -27,7 +27,7 @@ export default function Footer({
         name="completed"
         className={`${
           filterState === "completed" ? "bg-gray-200" : ""
-        } w-2/12 h-10 border-2 text-2xl hover:bg-green-200 hover:border-green-200 flex justify-center `}
+        } w-2/12 h-10 border-2 text-2xl hover:bg-green-200 hover:border-green-200  flex justify-center `}
         onClick={handleFilterClick}
       >
         Show
@@ -37,13 +37,13 @@ export default function Footer({
         name="active"
         className={`${
           filterState === "active" ? "bg-gray-200" : ""
-        } w-2/12 h-10 border-2 text-2xl hover:bg-green-200 hover:border-green-200 flex justify-center `}
+        } w-2/12 h-10 border-2 text-2xl hover:bg-green-200 hover:border-green-200  flex justify-center `}
         onClick={handleFilterClick}
       >
         Show <BiCheck className="w-9 h-9 text-green-500  " />
       </button>
       <button
-        className="w-2/12 h-10 border-2 text-2xl hover:bg-gray-200 hover:border-gray-200 flex justify-center"
+        className="w-2/12 h-10 border-2 text-2xl hover:bg-gray-200 hover:border-gray-200  flex justify-center"
         onClick={() => deleteCompleted()}
       >
         Delete <BiCheckDouble className="w-9 h-9 text-green-500 " />

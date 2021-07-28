@@ -11,8 +11,8 @@ export default function Input({
   return (
     <input
       className={`${
-        isEditable ? "bg-gradient-to-r from-blue-50 to-blue-100   " : ""
-      }w-10/12 h-10 outline-none text-2xl px-2`}
+        isEditable ? "bg-gradient-to-r from-blue-50 to-blue-200   " : ""
+      }w-10/12 h-10 outline-none text-2xl px-2 focus:ring-2 focus:ring-inset focus:ring-gray-200`}
       onKeyPress={(e) => enterHandler(e, id)}
       onBlur={(e) => enterHandler(e, id)}
       type={type}
